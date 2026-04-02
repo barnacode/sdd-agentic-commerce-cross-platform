@@ -88,6 +88,23 @@ review, and validation. The default deliverables for any relevant feature are:
 - Open questions
 - ADRs for structural decisions when needed
 
+Specifications MUST be evaluated with the following quality scale:
+
+- `SQ1 - Exploratory`: early idea capture, not eligible for planning
+- `SQ2 - Functional`: business intent is visible, but architecture and risk are
+  still underspecified
+- `SQ3 - Planable`: sufficient for early planning, but still allows material
+  ambiguity in trust, contracts, or operational flow
+- `SQ4 - Governed Architecture`: minimum acceptable level for this repository;
+  sufficient for the agent to draft `plan.md` under user supervision without
+  inventing critical decisions
+- `SQ5 - Contract Ready`: includes the precision needed to derive contracts and
+  specialized specs with minimal rework
+
+No feature may proceed to planning below `SQ4`. Features involving money,
+delegation, consent, checkout, or trust-sensitive protocol boundaries SHOULD
+target `SQ5`.
+
 The plan MUST describe the target architecture in layered form:
 
 1. Sovereign Decision Layer
@@ -108,6 +125,8 @@ Every relevant feature MUST satisfy these gates before delivery:
 - Jira task linkage and Confluence traceability are captured in the planning artifacts
 - Work follows the Gitflow branching model using the appropriate `feature/`,
   `release/`, `bugfix/`, or `hotfix/` branch type
+- The spec has been reviewed against the project spec quality standard and is at
+  least `SQ4`
 - Acceptance scenarios and measurable outcomes are defined
 - Threats, abuse paths, and compensations are documented for risky flows
 - Tests are defined and executed for the implemented scope
@@ -118,6 +137,32 @@ Every relevant feature MUST satisfy these gates before delivery:
 If QA validation detects defects, remediation MUST be tracked with a dedicated bug
 or error item in Jira and the diagnosis, impact, evidence, and resolution path MUST
 be documented in Confluence before closure.
+
+The minimum quality bar for a spec to pass `SQ4` is:
+
+- problem, objective, and scope are explicit
+- actors and authority boundaries are explicit
+- requirements are testable and non-ambiguous
+- acceptance scenarios are independently verifiable
+- constraints are explicit
+- `Sovereign Decision Model` is defined when applicable
+- `Trust & Protocol Boundaries` are explicit
+- authority or source-of-truth ownership is explicit
+- edge cases cover timeout, duplication, revocation, and failure handling
+- success criteria are measurable
+- assumptions and open questions are minimized and explicit
+- Jira and Confluence traceability exists or is marked `PENDING VERIFICATION`
+
+The spec MUST be rejected if any of the following occur:
+
+- decision sovereignty is required but not modeled
+- identity and agent authorization are conflated
+- protocols are named without boundary justification
+- authority or source-of-truth is missing
+- critical failure paths are omitted
+- there are more than three material ambiguities
+- implementation detail dominates the problem statement
+- endpoint work exists without QA and Postman implications
 
 The system MUST model and validate, when applicable:
 

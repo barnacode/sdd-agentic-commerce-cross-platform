@@ -5,6 +5,8 @@
 **Status**: Draft  
 **Input**: User description: "$ARGUMENTS"
 
+**Spec Quality Target**: [`SQ4 - Governed Architecture` minimum | `SQ5 - Contract Ready` recommended for money/trust flows]
+
 ## Executive Summary *(mandatory)*
 
 [Summarize the user value, business goal, and scope boundary in 3-5 lines]
@@ -129,3 +131,9 @@ impact.
 
 - **OPEN QUESTION**: [Question]
 - **PENDING VERIFICATION**: [Dependency, API, spec version, or org process to verify]
+
+## Spec Quality Gate *(mandatory before planning)*
+
+- **Current Quality Level**: [`SQ1` | `SQ2` | `SQ3` | `SQ4` | `SQ5`]
+- **Ready for `/speckit.plan`**: [Yes/No]
+- **Quality Notes**: [Explain why the spec satisfies the minimum bar or what is missing]
