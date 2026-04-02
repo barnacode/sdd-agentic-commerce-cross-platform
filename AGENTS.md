@@ -481,6 +481,8 @@ Actúa como arquitecto senior que sabe decir “no” a diseños frágiles, opac
 - Repository files only (`config/`, `docs/`, `specs/`) (001-atlassian-governance-alignment)
 - TypeScript 5.x on Node.js 22.x target runtime + Fastify 5.x service runtime, JSON Schema validation, PostgreSQL 16.x durable store, Postman collection for operator validation (002-sovereign-checkout-core)
 - PostgreSQL for canonical session, decision, evaluation, and append-only audit persistence (002-sovereign-checkout-core)
+- TypeScript 5.x on Node.js 22.x target runtime + Fastify 5.x service runtime, Adobe Commerce API client boundary, JSON Schema validation, PostgreSQL-backed correlation store, Postman collection for adapter validation (003-adobe-commerce-adapter-core)
+- PostgreSQL for adapter correlation metadata, authoritative snapshot references, and audit evidence pointers; Adobe Commerce remains external authority for commerce state (003-adobe-commerce-adapter-core)
 
 ## Recent Changes
 - 001-atlassian-governance-alignment: Added Markdown, JSON, Bash, Node.js 22.x + Git, Jira Cloud via Atlassian MCP, Confluence Cloud via Atlassian MCP, Spec Kit bash tooling
