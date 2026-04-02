@@ -1,93 +1,171 @@
 # SDD Agentic Commerce Cross Platform
 
+`Spec Kit` especializado para diseñar y gobernar soluciones de pagos agentizados
+soberanos, interoperables y auditables.
 
+## Descripción
 
-## Getting started
+Este repositorio contiene la base de planificación para construir una plataforma
+de agentic commerce y agentic payments guiada por `Spec-Driven Development`.
+El objetivo no es producir features ad hoc, sino forzar que cada cambio relevante
+nazca desde una especificación trazable, con soberanía de decisión, trust explícito,
+protocol boundaries claros, validación y evidencia operativa.
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+El framework de trabajo ya está endurecido para este dominio mediante:
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+- una constitución operativa en `.specify/memory/constitution.md`
+- templates de `spec`, `plan` y `tasks` adaptados a pagos agentizados soberanos
+- hooks opcionales de checklist y clarificación en `.specify/extensions.yml`
 
-## Add your files
+## Qué resuelve este Speckit
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository) or push an existing Git repository with the following command:
+Este `speckit` obliga a que cualquier feature relevante describa y valide, como
+mínimo:
 
+- `Sovereign Decision Model`
+- `Trust Model`
+- `Protocol Selection Matrix`
+- `Authority/Source of Truth`
+- `Threat Model`
+- `State Machines`
+- `Error Handling and Compensation`
+- `Observability Plan`
+- `Test Strategy`
+- `Rollout / Migration / Rollback`
+- `Jira`, `Confluence` y trazabilidad operativa
+- actualización de colecciones `Postman` por endpoint nuevo o modificado
+
+Está orientado a casos donde intervienen dinero, consentimiento, delegación,
+checkout orchestration o interoperabilidad entre agentes y plataformas.
+
+## Principios operativos
+
+- Toda acción con efecto económico o contractual debe estar respaldada por una
+  decisión soberana explícita.
+- Trust, autorización, delegación y source of truth no pueden quedar implícitos.
+- No se diseña ni implementa un flujo de pago sin idempotencia, replay protection
+  y compensaciones seguras.
+- Toda feature relevante sigue `Spec-Driven Development` antes de tocar código.
+- Todo trabajo debe seguir `gitflow`.
+- Si QA detecta defectos, debe existir bug en Jira y documentación de evidencia,
+  impacto y resolución en Confluence.
+- Todo endpoint nuevo o modificado debe documentarse en una colección de Postman
+  apta para automatización.
+
+## Estructura relevante
+
+```text
+.specify/
+├── memory/
+│   └── constitution.md
+├── templates/
+│   ├── spec-template.md
+│   ├── plan-template.md
+│   ├── tasks-template.md
+│   └── agent-file-template.md
+└── extensions.yml
+
+.aiassistant/docs/
+├── constitution/
+├── specs/governance/
+├── templates/
+└── agents/
 ```
-cd existing_repo
-git remote add origin https://umane.emeal.nttdata.com/git/DEXWEDEXWEBEXPERIENC/coe-cross/sdd-agentic-commerce-cross-platform.git
-git branch -M main
-git push -uf origin main
+
+## Flujo de uso
+
+### 1. Definir la feature
+
+Crear la rama de trabajo siguiendo `gitflow` y abrir la trazabilidad requerida:
+
+- ticket en Jira
+- página o sección en Confluence
+- branch adecuada: `feature/`, `release/`, `bugfix/` o `hotfix/`
+
+### 2. Generar la spec
+
+Usar `speckit` para crear la especificación funcional:
+
+```bash
+/speckit.specify "Describir aquí la feature"
 ```
 
-## Integrate with your tools
+La spec debe capturar el problema, alcance, restricciones, escenarios de aceptación,
+modelo de decisión soberana, trust boundaries y supuestos.
 
-- [ ] [Set up project integrations](https://umane.emeal.nttdata.com/git/DEXWEDEXWEBEXPERIENC/coe-cross/sdd-agentic-commerce-cross-platform/-/settings/integrations)
+### 3. Clarificar ambigüedades
 
-## Collaborate with your team
+Si hay dudas relevantes sobre dinero, consentimiento, revocación, privacidad,
+trust o boundaries protocolarios:
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/user/project/merge_requests/auto_merge/)
+```bash
+/speckit.clarify
+```
 
-## Test and Deploy
+### 4. Elaborar el plan técnico
 
-Use the built-in continuous integration in GitLab.
+```bash
+/speckit.plan
+```
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+El plan debe incluir arquitectura objetivo, bounded contexts, protocol matrix,
+trust model, threat model, state machines, compensaciones, observabilidad,
+estrategia de pruebas y rollback.
 
-***
+### 5. Generar las tareas
 
-# Editing this README
+```bash
+/speckit.tasks
+```
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+Las tareas deben quedar trazadas a requisitos y contemplar:
 
-## Suggestions for a good README
+- `gitflow`
+- Jira y Confluence
+- tests
+- Postman
+- validación QA
+- bug tracking para defectos detectados
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+### 6. Analizar consistencia
 
-## Name
-Choose a self-explaining name for your project.
+```bash
+/speckit.analyze
+```
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+Este paso permite detectar gaps entre `spec.md`, `plan.md` y `tasks.md` antes de
+implementar.
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+### 7. Implementar
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+```bash
+/speckit.implement
+```
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+Solo se debe implementar lo que esté trazado en la spec y el plan.
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+## Validaciones obligatorias
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+Antes de considerar terminada una feature:
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+- la spec debe ser consistente con la implementación
+- las pruebas definidas deben ejecutarse y pasar
+- los defectos QA deben tener bug en Jira y documentación en Confluence
+- los endpoints afectados deben estar reflejados en Postman
+- los riesgos, supuestos y `PENDING VERIFICATION` deben quedar explícitos
+- debe existir estrategia de rollback
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+## Artefactos principales
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+- [`.specify/memory/constitution.md`](./.specify/memory/constitution.md)
+- [`.specify/templates/spec-template.md`](./.specify/templates/spec-template.md)
+- [`.specify/templates/plan-template.md`](./.specify/templates/plan-template.md)
+- [`.specify/templates/tasks-template.md`](./.specify/templates/tasks-template.md)
+- [`.specify/extensions.yml`](./.specify/extensions.yml)
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+## Estado actual
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+El repositorio está preparado como base de planificación. La arquitectura objetivo
+del monorepo de agentic commerce y pagos soberanos puede estar definida en los
+artefactos de planificación aunque todavía no esté completamente materializada en
+el árbol de código.

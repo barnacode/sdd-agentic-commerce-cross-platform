@@ -1,0 +1,67 @@
+# Existing local tool exclusions
+/.ai/
+/.aiassistant/
+/.idea
+
+# OS and editor artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.crt
+secrets/
+
+# Dependencies
+node_modules/
+.pnpm-store/
+.npm/
+.yarn/
+
+# Build and runtime outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+.turbo/
+.cache/
+tmp/
+temp/
+
+# Test and coverage outputs
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Spec Kit and local automation runtime artifacts
+.specify/tmp/
+.specify/cache/
+
+# Python and misc tooling caches
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+
+# Local database and runtime files
+*.sqlite
+*.sqlite3
+*.db

@@ -1,0 +1,15 @@
+hooks:
+  before_specify:
+    - extension: "product-aligned-scope-check"
+      enabled: true
+      optional: true
+      command: "speckit.checklist"
+      description: "Verifica que el alcance de la feature explicite soberanía de decisión, trust boundaries y restricciones críticas antes de redactar la spec."
+      prompt: "Usa el checklist para confirmar scope, riesgo económico, autonomía del agente y necesidad de specialized specs antes de continuar."
+  after_specify:
+    - extension: "product-aligned-clarification"
+      enabled: true
+      optional: true
+      command: "speckit.clarify"
+      description: "Resuelve ambigüedades materiales de trust, consentimiento, dinero, revocación y boundary protocolario detectadas en la spec."
+      prompt: "Ejecuta clarificación si la spec deja abiertos aspectos de soberanía, trust, dinero, authority matrix o edge cases críticos."
