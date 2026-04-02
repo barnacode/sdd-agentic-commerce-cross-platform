@@ -127,6 +127,22 @@ impact.
 - **ASSUMPTION**: [Reasonable default used to keep planning moving]
 - **ASSUMPTION**: [Scope, environment, or dependency assumption]
 
+## Traceability *(mandatory)*
+
+- **Jira Project Key**: [`SACP` or `PENDING VERIFICATION`]
+- **Jira Issue Key**: [ID or `PENDING VERIFICATION`]
+- **Epic Key**: [ID or `PENDING VERIFICATION`]
+- **Protocol Scope**: [`ACP` | `UCP` | `AP2` | `A2A` | `MCP` | `x402` | `Internal` | `Multi-Protocol` | `PENDING VERIFICATION`]
+- **Surface Scope**: [`Core` | `Adobe Commerce` | `Stripe` | `OpenAI ACP` | `Gemini UCP` | `Observability` | `QA` | `Postman` | `Runbooks` | `PENDING VERIFICATION`]
+- **Mode Scope**: [`Human Present` | `Human Not Present` | `Both` | `N/A` | `PENDING VERIFICATION`]
+- **Risk Level**: [`Low` | `Medium` | `High` | `Critical` | `PENDING VERIFICATION`]
+- **Confluence Space**: [`SACPM` or `PENDING VERIFICATION`]
+- **Confluence Page**: [URL, page ID, or `PENDING VERIFICATION`]
+- **Related QA Evidence**: [URL, page ID, or `PENDING VERIFICATION`]
+- **Postman Required**: [`Yes` | `No` | `PENDING VERIFICATION`]
+- **Postman Impact**: [collection path/name or `N/A`]
+- **QA Evidence Required**: [`Yes` | `No` | `PENDING VERIFICATION`]
+
 ## Open Questions *(include only if unresolved and material)*
 
 - **OPEN QUESTION**: [Question]

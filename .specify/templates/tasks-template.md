@@ -26,10 +26,18 @@ reviewable, traceable, and independently testable.
 
 Every task set MUST preserve traceability to:
 
+- Jira project key
 - specification requirement(s)
+- epic key
+- protocol scope
+- surface scope
+- mode scope
+- risk level
 - plan section or specialized spec
+- Confluence space
 - Jira work item
 - Confluence documentation target when applicable
+- QA evidence target when applicable
 
 ## Phase 1: Governance & Setup
 

@@ -179,11 +179,22 @@ specs/[###-feature]/
 
 ## Traceability *(mandatory)*
 
+- **Jira Project Key**: [`SACP` or `PENDING VERIFICATION`]
 - **Jira Ticket(s)**: [IDs or `PENDING VERIFICATION`]
+- **Epic Key**: [Epic ID or `PENDING VERIFICATION`]
+- **Protocol Scope**: [`ACP` | `UCP` | `AP2` | `A2A` | `MCP` | `x402` | `Internal` | `Multi-Protocol` | `PENDING VERIFICATION`]
+- **Surface Scope**: [`Core` | `Adobe Commerce` | `Stripe` | `OpenAI ACP` | `Gemini UCP` | `Observability` | `QA` | `Postman` | `Runbooks` | `PENDING VERIFICATION`]
+- **Mode Scope**: [`Human Present` | `Human Not Present` | `Both` | `N/A` | `PENDING VERIFICATION`]
+- **Risk Level**: [`Low` | `Medium` | `High` | `Critical` | `PENDING VERIFICATION`]
+- **Confluence Space**: [`SACPM` or `PENDING VERIFICATION`]
 - **Confluence Page(s)**: [links or `PENDING VERIFICATION`]
 - **ADR Links**: [if structural decisions are introduced]
 - **Gitflow Branch Type**: [`feature/`, `release/`, `bugfix/`, or `hotfix/`]
+- **Confluence Page Field ID**: [`customfield_10094` or `PENDING VERIFICATION`]
+- **Postman Required Field ID**: [`customfield_10095` or `PENDING VERIFICATION`]
+- **QA Evidence Required Field ID**: [`customfield_10096` or `PENDING VERIFICATION`]
 - **Postman Collection(s)**: [paths, names, or `PENDING VERIFICATION`]
+- **QA Evidence Page(s)**: [links or `PENDING VERIFICATION`]
 
 ## Complexity Tracking
 

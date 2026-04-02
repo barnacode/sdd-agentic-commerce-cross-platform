@@ -16,6 +16,7 @@ El framework de trabajo ya está endurecido para este dominio mediante:
 - una constitución operativa en `.specify/memory/constitution.md`
 - templates de `spec`, `plan` y `tasks` adaptados a pagos agentizados soberanos
 - hooks opcionales de checklist y clarificación en `.specify/extensions.yml`
+- configuración canónica de `Jira` y `Confluence` en `config/atlassian/project-governance.json`
 
 ## Qué resuelve este Speckit
 
@@ -70,6 +71,12 @@ checkout orchestration o interoperabilidad entre agentes y plataformas.
 ├── specs/governance/
 ├── templates/
 └── agents/
+
+config/atlassian/
+└── project-governance.json
+
+docs/governance/
+└── jira-confluence-operating-model.md
 ```
 
 ## Flujo de uso
@@ -79,8 +86,13 @@ checkout orchestration o interoperabilidad entre agentes y plataformas.
 Crear la rama de trabajo siguiendo `gitflow` y abrir la trazabilidad requerida:
 
 - ticket en Jira
+- epic en Jira para trabajo relevante
 - página o sección en Confluence
 - branch adecuada: `feature/`, `release/`, `bugfix/` o `hotfix/`
+- convención canónica del repo:
+  - Jira project `SACP`
+  - Confluence space `SACPM`
+  - issue types localizados: `Historia`, `Tarea`, `Error`, `Spike`, `Epic`, `Subtarea`
 
 ### 2. Generar la spec
 
@@ -151,6 +163,9 @@ Antes de considerar terminada una feature:
 - la spec debe ser consistente con la implementación
 - las pruebas definidas deben ejecutarse y pasar
 - los defectos QA deben tener bug en Jira y documentación en Confluence
+- los campos Jira `Protocol Scope`, `Surface Scope`, `Mode Scope`, `Risk Level`,
+  `Confluence Page`, `Postman Required` y `QA Evidence Required` deben mantenerse
+  alineados para trabajo relevante
 - los endpoints afectados deben estar reflejados en Postman
 - los riesgos, supuestos y `PENDING VERIFICATION` deben quedar explícitos
 - debe existir estrategia de rollback
@@ -162,6 +177,8 @@ Antes de considerar terminada una feature:
 - [`.specify/templates/plan-template.md`](./.specify/templates/plan-template.md)
 - [`.specify/templates/tasks-template.md`](./.specify/templates/tasks-template.md)
 - [`.specify/extensions.yml`](./.specify/extensions.yml)
+- [`config/atlassian/project-governance.json`](./config/atlassian/project-governance.json)
+- [`docs/governance/jira-confluence-operating-model.md`](./docs/governance/jira-confluence-operating-model.md)
 
 ## Estado actual
 

@@ -9,7 +9,6 @@ Sync Impact Report
   - ✅ .specify/templates/plan-template.md
   - ✅ .specify/templates/tasks-template.md
 - Follow-up TODOs:
-  - Define canonical Jira project keys and Confluence space/page naming conventions
   - Materialize target monorepo structure in source code when implementation begins
 -->
 # SDD Agentic Commerce Cross Platform Constitution
@@ -123,6 +122,9 @@ architecture until the directories and packages exist in the repository.
 Every relevant feature MUST satisfy these gates before delivery:
 
 - Jira task linkage and Confluence traceability are captured in the planning artifacts
+- No `feature/` branch starts without a Jira issue
+- No relevant spec starts without an Epic reference
+- No plan starts without a Confluence page created or explicitly reserved
 - Work follows the Gitflow branching model using the appropriate `feature/`,
   `release/`, `bugfix/`, or `hotfix/` branch type
 - The spec has been reviewed against the project spec quality standard and is at
@@ -196,5 +198,29 @@ trust, audit, or payment safety requirements for convenience or demo speed.
 Every endpoint introduced or modified by a feature MUST be represented in a
 maintained Postman collection suitable for automated validation. Postman artifacts
 complement but do not replace contract, integration, or simulation testing.
+
+Canonical Atlassian traceability for this repository is:
+
+- Jira project: `SACP`
+- Confluence space: `SACPM`
+- Canonical operating model: `docs/governance/jira-confluence-operating-model.md`
+- Reusable machine-readable config:
+  `config/atlassian/project-governance.json`
+
+Branches MUST follow Gitflow and SHOULD include the Jira issue key once the work
+item exists, for example `feature/SACP-123-checkout-session-core`.
+
+Planning artifacts MUST capture at least:
+
+- `jira_project_key`
+- `epic_key`
+- `confluence_space`
+- `confluence_page`
+- `protocol_scope`
+- `surface_scope`
+- `mode_scope`
+- `risk_level`
+- QA evidence linkage when applicable
+- Postman linkage when APIs or contracts change
 
 **Version**: 1.0.0 | **Ratified**: 2026-04-02 | **Last Amended**: 2026-04-02
