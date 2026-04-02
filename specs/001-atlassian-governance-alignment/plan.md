@@ -255,7 +255,7 @@ This preserves Spec Kit artifact locality without forcing another branch rename.
 - **Postman Required Field ID**: `customfield_10095`
 - **QA Evidence Required Field ID**: `customfield_10096`
 - **Postman Collection(s)**: `N/A`
-- **QA Evidence Page(s)**: `PENDING VERIFICATION`
+- **QA Evidence Page(s)**: `https://barnacode.atlassian.net/wiki/spaces/SACPM/pages/217415681/QA+Evidence+-+SACP-9+-+Atlassian+governance+alignment+for+Spec+Kit`
 
 ## Complexity Tracking
 

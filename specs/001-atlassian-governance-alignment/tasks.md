@@ -27,7 +27,7 @@ Every task set in this feature preserves traceability to:
 - Risk level: `Medium`
 - Confluence space: `SACPM`
 - Confluence page: `217186305`
-- QA evidence target: `PENDING VERIFICATION`
+- QA evidence target: `https://barnacode.atlassian.net/wiki/spaces/SACPM/pages/217415681/QA+Evidence+-+SACP-9+-+Atlassian+governance+alignment+for+Spec+Kit`
 
 ## Phase 1: Governance & Setup
 

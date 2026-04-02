@@ -195,7 +195,7 @@ reflects that compliant branch name in its traceability section.
 - **Risk Level**: `Medium`
 - **Confluence Space**: `SACPM`
 - **Confluence Page**: `https://barnacode.atlassian.net/wiki/spaces/SACPM/pages/217186305/Feature+SACP-9+-+Atlassian+governance+alignment+for+Spec+Kit`
-- **Related QA Evidence**: `PENDING VERIFICATION`
+- **Related QA Evidence**: `https://barnacode.atlassian.net/wiki/spaces/SACPM/pages/217415681/QA+Evidence+-+SACP-9+-+Atlassian+governance+alignment+for+Spec+Kit`
 - **Postman Required**: `No`
 - **Postman Impact**: `N/A`
 - **QA Evidence Required**: `Yes`
@@ -204,8 +204,8 @@ reflects that compliant branch name in its traceability section.
 
 - **OPEN QUESTION**: Should the validation issue `SACP-8` remain in Jira as a
   documented probe, or should it be removed after the governance alignment is accepted?
-- **PENDING VERIFICATION**: Whether the obsolete remote branch name will be retained
-  as historical residue or removed after the rename is complete.
+- **RESOLVED**: The obsolete remote branch was removed after the rename to
+  `feature/SACP-9-atlassian-governance-alignment`.
 
 ## Spec Quality Gate *(mandatory before planning)*
 
