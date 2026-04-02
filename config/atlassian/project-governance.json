@@ -1,0 +1,211 @@
+{
+  "version": "1.0.0",
+  "status": "active",
+  "verified_at": "2026-04-02",
+  "pending_verifications": [
+    "Decidir si el issue de validación SACP-8 se conserva como referencia o se elimina.",
+    "Confirmar si el proyecto añadirá estados adicionales como Ready, In Review, QA y Blocked."
+  ],
+  "atlassian": {
+    "site_url": "https://barnacode.atlassian.net",
+    "cloud_id": "400120a5-c9e8-46cd-8465-1333072b427e",
+    "jira": {
+      "project_key": "SACP",
+      "project_name": "SDD Agentic Commerce Protocol MVP",
+      "project_id": "10037",
+      "bootstrap_issue_key": "SACP-1",
+      "issue_types": {
+        "actual_available": [
+          "Epic",
+          "Tarea",
+          "Subtarea",
+          "Historia",
+          "Error",
+          "Spike"
+        ],
+        "localized_names": {
+          "epic": "Epic",
+          "task": "Tarea",
+          "subtask": "Subtarea",
+          "story": "Historia",
+          "bug": "Error",
+          "spike": "Spike"
+        },
+        "ids": {
+          "task": "10082",
+          "epic": "10083",
+          "subtask": "10084",
+          "bug": "10085",
+          "story": "10086",
+          "spike": "10087"
+        },
+        "feature_task": "Tarea",
+        "epic": "Epic",
+        "subtask": "Subtarea",
+        "story": "Historia",
+        "bug": "Error",
+        "spike": "Spike"
+      },
+      "custom_fields": {
+        "protocol_scope": {
+          "id": "customfield_10090",
+          "name": "Protocol Scope"
+        },
+        "surface_scope": {
+          "id": "customfield_10091",
+          "name": "Surface Scope"
+        },
+        "mode_scope": {
+          "id": "customfield_10092",
+          "name": "Mode Scope"
+        },
+        "risk_level": {
+          "id": "customfield_10093",
+          "name": "Risk Level"
+        },
+        "confluence_page": {
+          "id": "customfield_10094",
+          "name": "Confluence Page"
+        },
+        "postman_required": {
+          "id": "customfield_10095",
+          "name": "Postman Required"
+        },
+        "qa_evidence_required": {
+          "id": "customfield_10096",
+          "name": "QA Evidence Required"
+        }
+      },
+      "labels": {
+        "project": "sdd-agentic-commerce",
+        "governance": "governance",
+        "spec_driven": "spec-driven",
+        "qa_bug": "qa-bug"
+      },
+      "branch_rules": {
+        "feature": "feature/<jira-key>-<slug>",
+        "bugfix": "bugfix/<jira-key>-<slug>",
+        "hotfix": "hotfix/<jira-key>-<slug>",
+        "release": "release/<version>"
+      }
+    },
+    "confluence": {
+      "space_key": "SACPM",
+      "space_name": "SDD Agentic Commerce Protocol MVP",
+      "space_id": "216530946",
+      "home_page_id": "216531059",
+      "page_tree": {
+        "home": {
+          "id": "216531059",
+          "title": "SDD Agentic Commerce Protocol MVP Home"
+        },
+        "product": {
+          "id": "216596481",
+          "title": "00. Product"
+        },
+        "roadmap": {
+          "id": "216662055",
+          "title": "01. Roadmap"
+        },
+        "epics": {
+          "id": "216727553",
+          "title": "02. Epics"
+        },
+        "specs": {
+          "id": "216498179",
+          "title": "03. Specs"
+        },
+        "plans": {
+          "id": "216760321",
+          "title": "04. Plans"
+        },
+        "adrs": {
+          "id": "216662017",
+          "title": "05. ADRs"
+        },
+        "qa_evidence": {
+          "id": "216662036",
+          "title": "06. QA Evidence"
+        },
+        "postman_and_contracts": {
+          "id": "216793089",
+          "title": "07. Postman and Contracts"
+        },
+        "runbooks": {
+          "id": "216694798",
+          "title": "08. Runbooks"
+        }
+      }
+    }
+  },
+  "traceability_policy": {
+    "minimum_required_links": [
+      "jira_issue_key",
+      "confluence_page_id_or_url",
+      "git_branch",
+      "spec_path"
+    ],
+    "feature_page_template": "Feature <jira-key> - <title>",
+    "adr_page_template": "ADR-<nnn> - <title>",
+    "qa_page_template": "QA Evidence - <jira-key> - <title>"
+  },
+  "bootstrap_traceability": {
+    "jira_issue_key": "SACP-1",
+    "confluence_pages": {
+      "home": "216531059",
+      "product": "216596481",
+      "roadmap": "216662055",
+      "epics": "216727553",
+      "specs": "216498179",
+      "plans": "216760321",
+      "adrs": "216662017",
+      "qa_evidence": "216662036",
+      "postman_and_contracts": "216793089",
+      "runbooks": "216694798",
+      "traceability_runbook": "216629249"
+    }
+  },
+  "validation_artifacts": {
+    "issue_type_and_field_probe": "SACP-8"
+  },
+  "mvp_epics": [
+    {
+      "jira_key": "SACP-2",
+      "summary": "MVP - Sovereign Checkout Core",
+      "confluence_page_id": "217055234"
+    },
+    {
+      "jira_key": "SACP-3",
+      "summary": "MVP - Adobe Commerce Integration",
+      "confluence_page_id": "216760340"
+    },
+    {
+      "jira_key": "SACP-4",
+      "summary": "MVP - Stripe Payment Integration",
+      "confluence_page_id": "216760359"
+    },
+    {
+      "jira_key": "SACP-5",
+      "summary": "MVP - OpenAI ACP Surface",
+      "confluence_page_id": "217055253"
+    },
+    {
+      "jira_key": "SACP-6",
+      "summary": "MVP - Gemini UCP Surface",
+      "confluence_page_id": "216531293"
+    },
+    {
+      "jira_key": "SACP-7",
+      "summary": "MVP - Audit, Observability and QA Hardening",
+      "confluence_page_id": "216629268"
+    }
+  ],
+  "confluence_blueprints": {
+    "epic_page": "216498205",
+    "feature_spec": "216760379",
+    "technical_plan": "217088001",
+    "adr": "216498224",
+    "qa_evidence": "216727572",
+    "bug_analysis": "217120769"
+  }
+}
