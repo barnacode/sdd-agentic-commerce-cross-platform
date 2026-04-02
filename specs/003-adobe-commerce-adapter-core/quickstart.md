@@ -11,6 +11,7 @@ remains compatible with the sovereign checkout core before implementation begins
 - Epic: `SACP-3`
 - Branch: `feature/SACP-65-adobe-commerce-adapter-core`
 - Spec page: `217415700`
+- Plan page: `217219080`
 - QA evidence page: `217186327`
 
 ## Review Workflow

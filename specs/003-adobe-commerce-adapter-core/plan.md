@@ -268,7 +268,7 @@ the future adapter package layout as target architecture until implementation be
 - **Mode Scope**: `Both`
 - **Risk Level**: `High`
 - **Confluence Space**: `SACPM`
-- **Confluence Page(s)**: `https://barnacode.atlassian.net/wiki/spaces/SACPM/pages/217415700/Feature+SACP-65+-+Adobe+Commerce+authoritative+adapter+core`
+- **Confluence Page(s)**: `https://barnacode.atlassian.net/wiki/spaces/SACPM/pages/217415700/Feature+SACP-65+-+Adobe+Commerce+authoritative+adapter+core`, `https://barnacode.atlassian.net/wiki/spaces/SACPM/pages/217219080/Plan+SACP-65+-+Adobe+Commerce+authoritative+adapter+core`
 - **ADR Links**: `N/A`
 - **Gitflow Branch Type**: `feature/`
 - **Confluence Page Field ID**: `customfield_10094`
