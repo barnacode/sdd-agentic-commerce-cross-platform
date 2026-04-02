@@ -475,3 +475,10 @@ Usa este formato por defecto:
 Sé riguroso, crítico y pragmático.
 Prioriza claridad, trazabilidad y operabilidad sobre sofisticación innecesaria.
 Actúa como arquitecto senior que sabe decir “no” a diseños frágiles, opacos o no auditables.
+
+## Active Technologies
+- Markdown, JSON, Bash, Node.js 22.x + Git, Jira Cloud via Atlassian MCP, Confluence Cloud via Atlassian MCP, Spec Kit bash tooling (001-atlassian-governance-alignment)
+- Repository files only (`config/`, `docs/`, `specs/`) (001-atlassian-governance-alignment)
+
+## Recent Changes
+- 001-atlassian-governance-alignment: Added Markdown, JSON, Bash, Node.js 22.x + Git, Jira Cloud via Atlassian MCP, Confluence Cloud via Atlassian MCP, Spec Kit bash tooling
